@@ -1,0 +1,36 @@
+{
+  "host": "127.0.0.1",
+  "port": 8765,
+  "evolution_interval_seconds": 900,
+  "train_interval_seconds": 1800,
+  "train_steps_per_cycle": 500,
+  "bootstrap_steps": 1000,
+  "candidates_per_generation": 8,
+  "candidate_timeout_seconds": 2,
+  "web_max_chars": 100000,
+  "task_count": 32,
+  "random_seed": 42,
+  "training": {
+    "batch_size": 8,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "model": {
+    "vocab_size": 256,
+    "d_model": 192,
+    "n_heads": 6,
+    "n_layers": 4,
+    "block_size": 256,
+    "dropout": 0.0
+  },
+  "bootstrap_urls": [
+    "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    "https://en.wikipedia.org/wiki/Machine_learning",
+    "https://en.wikipedia.org/wiki/Computer_science",
+    "https://en.wikipedia.org/wiki/Neuroscience",
+    "https://en.wikipedia.org/wiki/Consciousness",
+    "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+    "https://www.gutenberg.org/cache/epub/84/pg84.txt"
+  ]
+}
